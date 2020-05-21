@@ -20,7 +20,7 @@ total = 0
 
 # Loops through lines in file and adds positive numbers to total
 for x in range(repeat):
-    if int(lines[x+1]) == -999:
+    if int(lines[x+1]) == -999:# x + 1 to account for first line having total number of lines.
         break
     elif int(lines[x+1]) >= 0:
         total += int(lines[x+1])
